@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+  --green: #27ae60;
+  --black: #192a56;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+  background: rgb(255, 255, 255);
+}
+
+/* Deksripsi */
+.des .deskripsibuku .deskripsi {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  margin-left: 2rem;
+}
+
+.image {
+  margin-left: 4rem;
+}
+
+.image img {
+  max-width: 340px;
+  margin-left: 80px;
+  border-radius: 10px;
+}
+
+.content h2 {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  margin-bottom: 2rem;
+
+  font-family: 'Nunito', sans-serif;
+}
+
+.content h6 {
+  font-weight: bold;
+  font-size: 23px;
+  margin-bottom: 1.2rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.content p {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.line-benefit {
+  height: 2px;
+  width: 1000px;
+  background-color: #505050;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-left: -1px;
+}
+
+.about {
+  border-top: 0.2rem solid rgba(255, 244, 244, 0.1);
+  font-size: 2rem;
+  color: #000000;
+  padding: 0.5rem;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  margin-left: 5rem;
+}
+
+.about p {
+  margin-top: 1.5rem;
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.about h2 {
+  font-weight: bold;
+}
+/* Akhir Deskripsi */
+
+/* link buku */
+.downloadbuku {
+  margin-top: 1rem;
+  margin-left: 43rem;
+  margin-right: 1rem;
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  background: #ee4622;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  text-decoration: none;
+}
+
+.downloadbuku:hover {
+  color: #fff;
+}
+
+.readbookviaanyflip {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  background: var(--black);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  text-decoration: none;
+}
+
+.readbookviaanyflip:hover {
+  background: var(--green);
+  color: #fff;
+}
+
+img {
+  background-color: #fff;
+}
+/* akhir link buku */
+
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* Pengaturan di Setiap Layar */
+
+/* Smartphone */
+@media (max-width: 768px) {
+  .image {
+    margin-left: -3rem;
+  }
+
+  .content {
+    margin-top: 10px;
+  }
+
+  .line-benefit {
+    margin-left: -4rem;
+    width: 380px;
+  }
+  .about h2 {
+    margin-left: -4rem;
+  }
+
+  .about p {
+    margin-left: -4rem;
+  }
+
+  .downloadbuku {
+    margin-left: 25px;
+  }
+
+  .readbookviaanyflip {
+    margin-left: 25px;
+  }
+
+  img {
+    background-color: #fff;
+  }
+}
+/* Akhir Smartphone */
