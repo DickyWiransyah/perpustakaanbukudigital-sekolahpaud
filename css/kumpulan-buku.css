@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+  --green: #27ae60;
+  --black: #192a56;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+section {
+  padding: 2rem 1%;
+}
+
+section:nth-child(even) {
+  background: #fff;
+}
+/* Navbar */
+.container-fluid {
+  background: #fff;
+  padding: 0.9rem 7%;
+  margin-top: -9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+
+.nav-item {
+  font-size: 1.2rem;
+  position: relative;
+  left: 200px;
+  padding-right: 2rem;
+}
+
+.nav-link:after {
+  content: '';
+  display: block;
+  border-bottom: 3px solid #27ae60;
+  padding-bottom: 2px;
+  margin-bottom: -5px;
+  width: 0%;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #000000;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+/* Akhir Navbar */
+
+/* Kumpulan Buku */
+.card {
+  width: 13rem;
+}
+
+.card-text {
+  font-size: 18px;
+}
+
+#kumpulanbuku {
+  padding-top: 9rem;
+}
+/* Akhir Kumpulan Buku */
+
+/* Foooter */
+.footer .box2-container {
+  padding-top: 20px;
+  margin-left: 100px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box2-container .box2 h3 {
+  padding: 0.5rem 0;
+  font-size: 25px;
+  color: #2b2a2a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer .box2-container .box2 a {
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 18px;
+  color: #2b2a2a;
+  text-decoration: none;
+}
+
+.footer .box2-container .box2 a:hover {
+  color: var(--green);
+}
+
+.line1 {
+  border-top: 0.2rem solid rgba(255, 244, 244, 0.1);
+  width: 1150px;
+  margin-left: 100px;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  margin-bottom: -15px;
+}
+.footer .credit {
+  text-align: center;
+  font-size: 20px;
+  color: #2b2a2a;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.footer .credit span {
+  color: var(--green);
+}
+/* Akhir Footer */
+
+/* Line*/
+#kategoribuku {
+  margin-bottom: 1rem;
+}
+
+.row h3 {
+  margin-top: 1.5rem;
+}
+.line {
+  position: relative;
+  width: 90px;
+  height: 2.5px;
+  background-color: #00bfa6;
+  border-radius: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.kategoribuku1 {
+  font-size: 25px;
+  color: rgb(31, 31, 31);
+}
+/* Akhir Line */
+
+/* --------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* Pengaturan di Setiap Layar */
+
+/* Smartphone */
+@media (max-width: 768px) {
+  .container h3 {
+    margin-left: 25px;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .line {
+    margin-left: 25px;
+  }
+
+  .kategoribuku1 {
+    margin-left: 25px;
+  }
+
+  .row {
+    margin-left: 10px;
+  }
+
+  .card .nav-link:hover::after {
+    width: 120px;
+  }
+
+  .nav-item a {
+    margin-left: -200px;
+  }
+  .nav-link:after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #27ae60;
+    padding-bottom: 2px;
+    margin-bottom: -5px;
+    width: 0%;
+    transition: 0.3s;
+  }
+
+  .nav-link:hover {
+    color: #000000;
+  }
+  .nav-link:hover::after {
+    width: 10%;
+  }
+}
+/* Akhir Smartphone */

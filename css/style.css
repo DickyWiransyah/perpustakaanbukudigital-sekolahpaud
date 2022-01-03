@@ -1,166 +1,628 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  min-height: 1000px;
+  background-image: url(../img/bg1.png);
+  min-height: 5000px;
 }
 
 :root {
   --green: #27ae60;
+  --blue: #0071b8;
   --black: #192a56;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --dark-color: #273aaa;
+  --black: #444;
   --light-color: #666;
-  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --border-hover: 0.1rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-* {
-  font-family: 'Nunito', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  outline: none;
-  border: none;
-  transition: all 0.2s linear;
+/* All Version */
+.tombol {
+  border-radius: 40px;
+  margin-right: 100px;
+  margin-left: 350px;
+  color: white;
 }
 
-/* Navbar */
+.tombol:hover {
+  color: #fff !important;
+}
+
 section {
-  padding: 2rem 9%;
+  padding: 1.5rem 5%;
 }
-
-section:nth-child(even) {
-  background: #eee;
-}
-
-.container-fluid {
-  background: #fff;
-  padding: 0.6rem 7%;
-  margin-top: -9px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
-  box-shadow: var(--box-shadow);
-}
-
-.nav-item {
-  font-size: 1.1rem;
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
   position: relative;
-  left: 220px;
-  padding-right: 2rem;
 }
 
-.nav-link:after {
+.heading::before {
   content: '';
-  display: block;
-  border-bottom: 3px solid #27ae60;
-  padding-bottom: 2px;
-  margin-bottom: -5px;
-  width: 0%;
-  transition: 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 0.01rem;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+
+  margin-right: -100px;
+}
+
+.heading span {
+  font-size: 30px;
+  padding: 0.1rem 1rem;
+  color: var(--black);
+  background: #fff;
+  border: var(--border);
+}
+/* Navbar */
+.navbar-brand {
+  margin-left: 70px;
+}
+.nav-link {
+  color: #000 !important;
+}
+.nav-link {
+  margin-right: 100px;
+  margin-left: -50px;
 }
 
 .nav-link:hover {
-  color: #000000;
+  color: #fff !important;
+  background: #0071b8;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
 }
-.nav-link:hover::after {
-  width: 100%;
+
+/* Bagian List Buku */
+#kategoribuku {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.line {
+  position: relative;
+  width: 90px;
+  height: 2.8px;
+  background-color: #00bfa6;
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 /* Akhir Navbar */
 
-/* List Buku */
-.row {
-  padding-left: 35px;
-  padding-right: 35px;
+/* Jumbotron */
+#particles-js {
+  background-image: url(../img/background.png);
+  background-size: cover;
+  height: 830px;
+  margin-top: -150px;
 }
-/* Akhir List Buku */
+
+.jumbotron h1 {
+  position: absolute;
+  color: #0071b8;
+  padding-top: 340px;
+  margin-left: -50px;
+  font-size: 90px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.jumbotron p {
+  position: absolute;
+  color: #00415c;
+  margin-left: -1px;
+  padding-top: 550px;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tombol1 {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 600px;
+  border-radius: 40px;
+  color: #fff;
+  padding: 0.3rem 2rem;
+  font-size: 20px;
+  background: var(--blue);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tombol1:hover {
+  background: #0160bc;
+  color: #fff;
+}
+
+/* Akhir Jumbotron */
+
+/* Fitur ICONS*/
+.icons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+.icons-container .icons1 {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.icons-container .icons1 i {
+  font-size: 2.5rem;
+  color: var(--blue);
+  padding-left: 5rem;
+}
+
+.icons-container .icons1 h3 {
+  font-size: 1.3rem;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+}
+
+.icons-container .icons1 p {
+  font-size: 1.2rem;
+  color: var(--light-color);
+}
+
+/*  */
+.icons-container .icons2 {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.icons-container .icons2 i {
+  font-size: 2.5rem;
+  color: var(--blue);
+  padding-left: 4rem;
+}
+
+.icons-container .icons2 h3 {
+  font-size: 1.3rem;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+}
+
+.icons-container .icons2 p {
+  font-size: 1.2rem;
+  color: var(--light-color);
+}
+/*  */
+
+/*  */
+.icons-container .icons3 {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.icons-container .icons3 i {
+  font-size: 2.5rem;
+  color: var(--blue);
+  padding-left: 1rem;
+}
+
+.icons-container .icons3 h3 {
+  font-size: 1.3rem;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+}
+
+.icons-container .icons3 p {
+  font-size: 1.2rem;
+  color: var(--light-color);
+}
+/*  */
+
+/*  */
+.icons-container .icons4 {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.icons-container .icons4 i {
+  font-size: 2.5rem;
+  color: var(--blue);
+  padding-left: 1rem;
+}
+
+.icons-container .icons4 h3 {
+  font-size: 1.3rem;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+}
+
+.icons-container .icons4 p {
+  font-size: 1.2rem;
+  color: var(--light-color);
+}
+/*  */
+/* Akhir Fitur */
+
+/* List Buku Effect Coverflow */
+.list-buku {
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.list {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006);
+}
+
+.list img {
+  display: block;
+  width: 100%;
+}
+/* Akhir List Buku Effect Coverflow */
+
+/* Parallax Contribution*/
+.newsletter {
+  background: url(../img/bg1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  height: 620px;
+}
+
+.newsletter h3 {
+  color: #000;
+  margin-left: 470px;
+  margin-top: 220px;
+  font-family: 'Righteous', sans-serif;
+}
+.tombol2 {
+  position: absolute;
+  margin-left: 500px;
+  margin-top: 10px;
+  border-radius: 40px;
+  color: #fff;
+  padding: 0.3rem 2rem;
+  font-size: 20px;
+  background: var(--blue);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tombol2:hover {
+  background: #0160bc;
+  color: #fff;
+}
+/* Akhir Parallax Contribution */
+
+/* New Arrival */
+.newarrival .book-stand {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.newarrival .book-stand .wraper {
+  flex: 1 1 10rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.newarrival .book-stand .wraper a img {
+  height: 17rem;
+}
+
+.newarrival .book-stand .wraper a:hover img {
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+.stand {
+  width: 100%;
+  margin-top: -2rem;
+}
+/* Akhir New Arrival */
+
+/* Buku Terpopuler */
+.bukupopuler .buku-populer .box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  border: var(--border);
+  margin: 1rem 0;
+  text-decoration: none;
+}
+
+.bukupopuler .buku-populer .box:hover {
+  border: var(--border-hover);
+}
+
+.bukupopuler .buku-populer .box .image img {
+  height: 10rem;
+}
+
+.bukupopuler .buku-populer .box .informasi h3 {
+  font-size: 1.5rem;
+  color: var(--black);
+  text-decoration: #000;
+}
+
+.bukupopuler .buku-populer .box .informasi p {
+  font-size: 1rem;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.bukupopuler .buku-populer .box .informasi .stars i {
+  font-size: 1rem;
+  color: var(--green);
+}
+/* Akhir Terpopuler */
+
+/* Buku Terbaik */
+.deal {
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.deal .content {
+  flex: 1 1 10rem;
+}
+
+.deal .image {
+  flex: 1 1 10rem;
+}
+
+.deal .image img {
+  width: 300px;
+  margin-left: 200px;
+}
+
+.deal .content h3 {
+  color: #0071b8;
+  font-size: 1.7rem;
+  padding-bottom: 0.5rem;
+}
+
+.deal .content h1 {
+  color: var(--black);
+  font-size: 2rem;
+}
+
+.deal .content p {
+  padding: 1rem 0;
+  color: var(--light-color);
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+.tombol3 {
+  display: inline-block;
+  position: absolute;
+  border-radius: 0.5rem;
+  color: #fff !important;
+  padding: 0.4rem 1rem;
+  font-size: 20px;
+  background: var(--blue);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tombol3:hover {
+  background: #0160bc;
+  color: #fff;
+}
+/* Akhir Buku Terbaik */
+
+/* Other Website */
+.otherwebsite .website-slider .box1 {
+  margin: 2rem 0;
+  border: var(--border);
+  margin-top: -20px;
+}
+
+.otherwebsite .website-slider .box1:hover {
+  border: var(--border-hover);
+}
+
+.otherwebsite .website-slider .box1 .image {
+  height: 17rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.otherwebsite .website-slider .box1 .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.otherwebsite .website-slider .box1:hover .image img {
+  transform: scale(1.1);
+  transition: 0.8s;
+}
+
+.otherwebsite .website-slider .box1 .content {
+  padding: 1.5rem;
+}
+
+.otherwebsite .website-slider .box1 .content h3 {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.otherwebsite .website-slider .box1 .content p {
+  font-size: 1rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.tombol4 {
+  display: inline-block;
+  position: absolute;
+  border-radius: 0.5rem;
+  color: #fff !important;
+  padding: 0.3rem 1rem;
+  font-size: 15px;
+  background: var(--blue);
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: -20px;
+}
+
+.tombol4:hover {
+  background: #0160bc;
+  color: #fff;
+}
+/* Akhir Other Website */
+
+/* Video */
+video {
+  width: 850px;
+  margin-left: 200px;
+}
+/* AKhir Vido */
 
 /* Foooter */
-.footer .box-container {
-  margin-left: 10px;
+.footer .box2-container {
+  padding-top: 20px;
+  margin-left: 100px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   gap: 1.5rem;
 }
 
-.footer .box-container .box h3 {
+.footer .box2-container .box2 h3 {
   padding: 0.5rem 0;
   font-size: 25px;
-  color: #d4d4d4;
+  color: #2b2a2a;
   text-decoration: none;
   font-weight: bold;
 }
 
-.footer .box-container .box a {
+.footer .box2-container .box2 a {
   display: block;
   padding: 0.5rem 0;
   font-size: 18px;
-  color: #d4d4d4;
+  color: #2b2a2a;
   text-decoration: none;
 }
 
-.footer .box-container .box a:hover {
+.footer .box2-container .box2 a:hover {
   color: var(--green);
 }
 
+.line1 {
+  border-top: 0.2rem solid rgba(255, 244, 244, 0.1);
+  width: 1150px;
+  margin-left: 100px;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  margin-bottom: -15px;
+}
 .footer .credit {
   text-align: center;
-  border-top: 0.2rem solid rgba(255, 244, 244, 0.1);
   font-size: 20px;
-  color: #d4d4d4;
+  color: #2b2a2a;
   padding: 0.5rem;
-  padding-top: 1.5rem;
-  margin-top: 1.5rem;
   text-decoration: none;
 }
 
 .footer .credit span {
   color: var(--green);
 }
-
-.sosialmedia {
-  margin-top: 1rem;
-}
 /* Akhir Footer */
 
-/* Line*/
-#kategoribuku {
-  margin-bottom: 1rem;
+/*scroll up*/
+#myBtn {
+  background-color: #222227;
+  height: 50px;
+  width: 30px;
+  border: 2px solid rgb(255, 255, 255);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: none;
+  z-index: 99;
 }
 
-.row h3 {
-  margin-top: 1.5rem;
-}
-.line {
-  position: relative;
-  width: 90px;
-  height: 2.5px;
-  background-color: #00bfa6;
-  border-radius: 30px;
-  margin-top: 15px;
-  margin-bottom: 10px;
+#myBtn::before,
+#myBtn::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: 3.5px;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(225deg);
+  border: 2px solid rgb(255, 255, 255);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-up 1s ease-in-out infinite;
 }
 
-.kategoribuku1 {
-  font-size: 25px;
-  color: rgb(31, 31, 31);
+#myBtn::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
 }
-/* Akhir Line */
 
-/* --------------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------------- */
-/* Pengaturan di Setiap Layar */
+#myBtn:active {
+  background-color: #e099bd !important;
+}
 
-/* Smartphone */
-@media (max-width: 768px) {
-  .card {
-    width: 300px;
+#myBtn:hover {
+  background-color: #9e99e0;
+}
+
+/*animate function*/
+@keyframes scroll-up {
+  100% {
+    /* top:20%; */
+    opacity: 0;
   }
 
-  .nav-link:hover::after {
-    width: 120px;
+  60% {
+    opacity: 1;
   }
 
-  .nav-item a {
-    margin-left: -215px;
+  30% {
+    opacity: 1;
+  }
+
+  0% {
+    top: 90%;
+    opacity: 0;
   }
 }
-/* Akhir Smartphone */
+
+/* Smartphone Version */
+@media (min-width: 768px) {
+}
