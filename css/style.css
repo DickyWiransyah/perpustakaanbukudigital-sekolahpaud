@@ -27,11 +27,11 @@ body {
   border-radius: 40px;
   margin-right: 100px;
   margin-left: 350px;
-  color: white;
+  color: black;
 }
 
 .tombol:hover {
-  color: #fff !important;
+  color: black !important;
 }
 
 section {
@@ -82,55 +82,40 @@ section {
   border-radius: 0.5rem;
   padding: 0.5rem 1.5rem;
 }
-
-/* Bagian List Buku */
-#kategoribuku {
-  margin-left: 50px;
-  margin-top: 30px;
-}
-
-.line {
-  position: relative;
-  width: 90px;
-  height: 2.8px;
-  background-color: #00bfa6;
-  border-radius: 30px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
 /* Akhir Navbar */
 
 /* Jumbotron */
-#particles-js {
+.jumbotron {
   background-image: url(../img/background.png);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 830px;
-  margin-top: -150px;
-}
-
-.jumbotron h1 {
-  position: absolute;
-  color: #0071b8;
-  padding-top: 340px;
-  margin-left: -50px;
-  font-size: 90px;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
+  margin-top: -90px;
 }
 
 .jumbotron p {
   position: absolute;
   color: #00415c;
-  margin-left: -1px;
-  padding-top: 550px;
-  font-size: 25px;
+  margin-left: 70px;
+  padding-top: 400px;
+  font-size: 21px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.jumbotron span {
+  position: absolute;
+  color: #00415c;
+  margin-left: 100px;
+  padding-top: 430px;
+  font-size: 21px;
   font-family: 'Montserrat', sans-serif;
 }
 
 .tombol1 {
   position: absolute;
-  margin-left: 50px;
-  margin-top: 600px;
+  margin-left: 110px;
+  margin-top: 470px;
   border-radius: 40px;
   color: #fff;
   padding: 0.3rem 2rem;

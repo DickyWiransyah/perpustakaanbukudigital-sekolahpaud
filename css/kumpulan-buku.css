@@ -7,28 +7,10 @@
   --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
 
-* {
-  font-family: 'Nunito', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  outline: none;
-  border: none;
-  transition: all 0.2s linear;
-}
-
-section {
-  padding: 2rem 1%;
-}
-
-section:nth-child(even) {
-  background: #fff;
-}
 /* Navbar */
 .container-fluid {
   background: #fff;
-  padding: 0.9rem 7%;
+  padding: 0.6rem 7%;
   margin-top: -9px;
   display: flex;
   align-items: center;
@@ -38,9 +20,9 @@ section:nth-child(even) {
 }
 
 .nav-item {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   position: relative;
-  left: 200px;
+  left: 170px;
   padding-right: 2rem;
 }
 
@@ -63,18 +45,46 @@ section:nth-child(even) {
 /* Akhir Navbar */
 
 /* Kumpulan Buku */
+
 .card {
-  width: 13rem;
+  width: 11.5rem;
 }
 
 .card-text {
   font-size: 18px;
 }
 
+.card-title {
+  font-size: 17px;
+  font-weight: normal;
+}
 #kumpulanbuku {
-  padding-top: 9rem;
+  padding-top: 8rem;
 }
 /* Akhir Kumpulan Buku */
+
+/* Line*/
+#kategoribuku {
+  margin-bottom: 1rem;
+}
+
+.row h4 {
+  margin-top: 1.5rem;
+}
+.line {
+  position: relative;
+  width: 90px;
+  height: 2.5px;
+  background-color: #00bfa6;
+  border-radius: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.container h4 {
+  font-weight: normal;
+}
+/* Akhir Line */
 
 /* Foooter */
 .footer .box2-container {
@@ -126,30 +136,6 @@ section:nth-child(even) {
   color: var(--green);
 }
 /* Akhir Footer */
-
-/* Line*/
-#kategoribuku {
-  margin-bottom: 1rem;
-}
-
-.row h3 {
-  margin-top: 1.5rem;
-}
-.line {
-  position: relative;
-  width: 90px;
-  height: 2.5px;
-  background-color: #00bfa6;
-  border-radius: 30px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.kategoribuku1 {
-  font-size: 25px;
-  color: rgb(31, 31, 31);
-}
-/* Akhir Line */
 
 /* --------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------- */
