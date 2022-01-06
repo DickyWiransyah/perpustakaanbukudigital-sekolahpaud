@@ -44,7 +44,31 @@
 }
 /* Akhir Navbar */
 
+/* Line*/
+#kategoribuku {
+  margin-bottom: 1rem;
+}
+
+.container h4 {
+  font-weight: normal;
+  margin-left: -20px;
+}
+.line {
+  position: relative;
+  width: 90px;
+  height: 2.5px;
+  background-color: #00bfa6;
+  border-radius: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: -18px;
+}
+/* Akhir Line */
+
 /* Kumpulan Buku */
+.row {
+  margin-left: -30px;
+}
 
 .card {
   width: 11.5rem;
@@ -62,29 +86,6 @@
   padding-top: 8rem;
 }
 /* Akhir Kumpulan Buku */
-
-/* Line*/
-#kategoribuku {
-  margin-bottom: 1rem;
-}
-
-.row h4 {
-  margin-top: 1.5rem;
-}
-.line {
-  position: relative;
-  width: 90px;
-  height: 2.5px;
-  background-color: #00bfa6;
-  border-radius: 30px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.container h4 {
-  font-weight: normal;
-}
-/* Akhir Line */
 
 /* Foooter */
 .footer .box2-container {
